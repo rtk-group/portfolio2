@@ -52,41 +52,41 @@ function App() {
   }, [])
 
 
-  useEffect(() => {
-    // ScrollReveal initialization
-    const sr = ScrollReveal({
-      distance: '20px',
-      duration: 1500,
-      easing: 'ease-in-out',
-      mobile: true,
-      reset: false
-    });
+  // useEffect(() => {
+  //   // ScrollReveal initialization
+  //   const sr = ScrollReveal({
+  //     distance: '20px',
+  //     duration: 1500,
+  //     easing: 'ease-in-out',
+  //     mobile: true,
+  //     reset: false
+  //   });
 
-    sr.reveal('.reveal', {
-      delay: 200,
-      origin: 'bottom',
-      interval: 100,
-      viewFactor: 0.1
-    });
+  //   sr.reveal('.reveal', {
+  //     delay: 200,
+  //     origin: 'bottom',
+  //     interval: 100,
+  //     viewFactor: 0.1
+  //   });
 
-    sr.reveal('.reveal-left', {
-      origin: 'left',
-      distance: '50px',
-      mobile: false
-    });
+  //   sr.reveal('.reveal-left', {
+  //     origin: 'left',
+  //     distance: '50px',
+  //     mobile: false
+  //   });
 
-    sr.reveal('.reveal-right', {
-      origin: 'right',
-      distance: '50px',
-      mobile: false
-    });
+  //   sr.reveal('.reveal-right', {
+  //     origin: 'right',
+  //     distance: '50px',
+  //     mobile: false
+  //   });
 
-    sr.reveal('.reveal-scale', {
-      scale: 0.85
-    });
+  //   sr.reveal('.reveal-scale', {
+  //     scale: 0.85
+  //   });
 
-    return () => sr.destroy();
-  }, []);
+  //   return () => sr.destroy();
+  // }, []);
 
 
   return (
