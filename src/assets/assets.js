@@ -21,25 +21,3 @@ export const imgaddres = {
   ser3,
   check
 }
-
-const customcursor = () => {
-
-  let hello = document.querySelector('.my-cursor')
-  document.addEventListener('mousemove', (e) => {
-    hello.style.left = e.clientX + 'px'
-    hello.style.top = e.clientY + 'px'
-  })
-
-  const hoverElements = document.querySelectorAll('p, li, a, span');
-  hoverElements.forEach(element => {
-    element.addEventListener('mouseenter', function () {
-      hello.classList.add('large');
-    });
-
-    element.addEventListener('mouseleave', function () {
-      hello.classList.remove('large');
-    });
-  });
-}
-
-export default customcursor;
